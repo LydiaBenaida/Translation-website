@@ -1,0 +1,347 @@
+
+#logo {
+   height: 20%;
+    width: 10%;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+ 
+  background-color: rgb(177, 211, 221);
+  
+}
+.reseau {
+  height: 10%;
+  width: 5%; 
+  position: relative;
+  top:-60px;
+  left:930Px;
+}
+.menu {
+list-style-type:none;
+margin:0px;
+padding: 15px;
+
+
+
+     
+}
+.type_menu {
+    margin-left:5px;
+    float:left; /*pour IE*/
+    
+
+}
+
+.type_menu a {
+
+     height: 50PX;
+    display:block;
+    float:left;   
+    width:175px;
+    background-color: rgb(80, 150, 190);
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    
+    padding:5px;
+    border:2px solid;
+
+
+  
+}
+.type_menu a:hover{
+    color: #1b1b1b;
+    padding: 15px;
+    background-color: rgb(177, 211, 221);
+}
+/* .diapo{
+ 
+    position: relative;
+    margin: 0px;
+    padding: 15px;
+  
+}
+.img{
+    -webkit-animation: slider 16s infinite ease-in-out;
+    animation: slider 16s infinite ease-in-out; /* nombre de slide * temps par slide, ici on choissis de passer 4s par slide donc 4 slides * 4s = 16s*/
+ /*   position: absolute;
+    left:0; top:0;
+    width: 300%; /* nombre de slides * 100%, ici 4 donc 400% */
+/*/*}
+
+  .slider{
+    position: relative;
+    width: 640px;
+    height: 320px;
+    overflow: hidden;
+  }
+  .img img {
+    display: inline-block;
+} */
+ 
+  @keyframes rotation {
+    0%   {transform: translate(0);}  
+    25%      { transform: translate(-50vw); }  
+    50%      {transform: translate(-100vw); }
+    75%      {transform: translate(0); }  
+}
+  .contenu{
+    width: 500%;
+    height: 400px;
+    margin: 0%;
+    overflow: hidden;
+  }
+  .diapo{
+    width: 500%;
+    height: 400px;
+    animation:rotation 9s ease-in-out infinite;
+    background: rgb(143, 53, 53);
+  }
+  .diapo div{
+    float: left;
+    margin: 0px;
+  }
+  img{
+    height:   700px;
+    width: 40vw;
+  }
+
+
+  /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(80, 150, 190);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next  to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the valider  button */
+input[type=Valider] {
+  background-color:  rgb(80, 150, 190);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:right;
+}
+
+/* Style the container */
+.containerD {
+  border-radius: 5px;
+  background-color:  rgb(80, 150, 190);
+  padding:5px;
+  position: relative;
+  float: right;
+  width:50%;
+top: 100px;
+  
+
+}
+.containerG {
+  border-radius: 1px;
+  background-color: rgb(80, 150, 190);
+  padding: 5px;
+  position: relative;
+  float: left;
+  width:45%;
+top: 100px;
+  
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .col-25, .col-75, input[type=Valider] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* service*/
+
+.services-card img{
+
+ 
+  box-shadow: 0 0 5px;
+  margin: 20px 0;
+}
+
+.services-card p{
+  margin: 10px 0;
+  padding: 10px;
+}
+#services img{
+
+max-height: 300px;
+width:  100%;
+margin: 20px auto;
+}
+
+
+/* FORM */
+.form-card{
+  position: relative;
+  width: 60vw;
+  max-width: 600px;
+  margin: 50vh auto 0 auto;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  border: 1px solid lightcoral;
+  padding: 5px 10px;
+}
+.form-card h1{
+  position: absolute;
+  top: -35px;
+  background: lightcoral;
+  padding: 5px;
+  border-radius: 10px;
+}
+.form-card div{
+  display:flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 10px 10px;
+}
+.form-card label,
+.form-card input{
+  height: 30px;
+  padding: 5px 0;
+}
+.form-card p{
+  height: 30px;
+  padding: 5px 0;
+  color: red;
+}
+.form-card input,
+.form-card textarea{
+  border: 1px solid lightgrey;
+}
+.form-card input[type="submit"]{
+  background: lightcoral;
+}
+.form-card input[type="file"]{
+  border: 0px solid lightgrey;
+}
+.a-inscription{
+  padding: 5px 0;
+}
+
+/*reister */
+body {
+    font-family: Arial;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.form-head {
+    color: #191919;
+    font-weight: normal;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;    
+    font-size: 1.8em;
+}
+
+.error-message {
+    padding: 7px 10px;
+    background: #fff1f2;
+    border: #ffd5da 1px solid;
+    color: #d6001c;
+    border-radius: 4px;
+    margin: 30px 0px 10px 0px;
+}
+
+.success-message {
+    padding: 7px 10px;
+    background: #cae0c4;
+    border: #c3d0b5 1px solid;
+    color: #027506;
+    border-radius: 4px;
+    margin: 30px 0px 10px 0px;
+}
+
+.demo-table {
+    background: #ffffff;
+    border-spacing: initial;
+    margin: 15px auto;
+    word-break: break-word;
+    table-layout: auto;
+    line-height: 1.8em;
+    color: #333;
+    border-radius: 4px;
+    padding: 20px 40px;
+    width: 380px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+.demo-table .label {
+    color: #888888;
+}
+
+.demo-table .field-column {
+    padding: 15px 0px;
+}
+
+.demo-input-box {
+    padding: 13px;
+    border: #CCC 1px solid;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btnRegister {
+    padding: 13px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    border: #5791da 1px solid;
+    font-size: 1.1em;
+}
+
+.response-text {
+    max-width: 380px;
+    font-size: 1.5em;
+    text-align: center;
+    background: #fff3de;
+    padding: 42px;
+    border-radius: 3px;
+    border: #f5e9d4 1px solid;
+    font-family: arial;
+    line-height: 34px;
+    margin: 15px auto;
+}
+
+.terms {
+    margin-bottom: 5px;
+}

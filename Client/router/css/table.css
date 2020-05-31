@@ -1,0 +1,20 @@
+table {
+    border-collapse:collapse;
+    width:90%;
+    }
+  tr, th, td {
+    border:1px solid black;
+    width:20%;
+    text-align:center;
+    }
+   td {
+    text-align:center;
+    }
+   caption {
+    font-weight:bold
+    }
+    .main {
+
+ 
+        background: #f8f8f8;
+        padding: 20px 0; }
